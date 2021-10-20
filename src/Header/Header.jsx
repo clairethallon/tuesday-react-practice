@@ -22,10 +22,28 @@ function Header() {
         setbuttonVal(event.target.value);
 
     }
-    const handleEquationButton = (numOne, buttonVal, numTwo) => {
+    const handleEquationButton = () => {
 
-        console.log('in handleEquationButton', numOne, buttonVal, numTwo);
-        setEquals();
+        let firstNum = Number(numOne);
+        let secondNum = Number(numTwo);
+        console.log('in handleEquationButton', firstNum, secondNum);
+
+        if (String(buttonVal) === '+') {
+            setEquals(firstNum + secondNum);
+            return;
+        }
+        else if (String(buttonVal) === '-') {
+            setEquals(firstNum - secondNum);
+            return;
+        }
+        else if (String(buttonVal) === '/') {
+            setEquals(firstNum / secondNum);
+            return;
+        }
+        else if (String(buttonVal) === '*') {
+            setEquals(firstNum * secondNum);
+            return;
+        }
 
     }
     return (
