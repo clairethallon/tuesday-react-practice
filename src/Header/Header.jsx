@@ -53,7 +53,7 @@ function Header() {
     }
     return (
         <div>
-            <h1>Claire's Calc</h1>
+            <h1>Claire's Amazing Calc</h1>
             <input type="number" placeholder="enter a number" onChange={(event) => handleNumOne(event)} />
             <button value="*" onClick={(event) => handleOpButton(event)}>*</button>
             <button value="/" onClick={(event) => handleOpButton(event)}>/</button>
